@@ -1,0 +1,15 @@
+
+public class ejercicios344 {
+
+	public static void main(String[] args) {
+		// Ejercicio pág 344
+		/*Ejercicio: escribe un programa con cuatro variables de tipo entero (a, b, c y d) y un
+		condicional que imprima por pantalla si la suma de a y b es mayor que la suma de c y d.
+		*/
+		int a=9,b=2,c=3,d=4;
+		if (a+b > c+d) {
+			System.out.println("a+b es mayor que c+d");
+		}
+	}
+
+}
