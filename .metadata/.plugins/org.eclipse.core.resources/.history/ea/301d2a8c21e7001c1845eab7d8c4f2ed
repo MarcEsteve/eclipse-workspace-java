@@ -1,7 +1,7 @@
 public class ejercicios344 {
 
 	public static void main(String[] args) {
-		// Ejercicio pag 344
+		// Ejercicio pág 344
 		/*Ejercicio: escribe un programa con cuatro variables de tipo entero (a, b, c y d) y un
 		condicional que imprima por pantalla si la suma de a y b es mayor que la suma de c y d.
 		*/
@@ -9,9 +9,9 @@ public class ejercicios344 {
 		if (a+b > c+d) {
 			System.out.println("a+b es mayor que c+d");
 		}
-		/*Ejercicio: escribe un programa que almacene tres angulos de un triangulo en variables de
+		/*Ejercicio: escribe un programa que almacene tres ángulos de un triángulo en variables de
 		tipo entero (angulo1, angulo2 y angulo3). Crea un condicional que compruebe si esos
-		tres angulos juntos pueden formar un triangulo (los angulos de un triangulo suman
+		tres ángulos juntos pueden formar un triángulo (los ángulos de un triángulo suman
 		siempre 180 grados).
 		*/
 		int angulo1=70, angulo2=50,angulo3=60;
@@ -19,7 +19,7 @@ public class ejercicios344 {
 			System.out.println("Los angulos forman un triangulo");
 		}
 		/*Ejercicio: escribe un programa con una variable de tipo entero (a) y un condicional que
-		evalue si el entero es par o impar utilizando el operador %.*/
+		evalúe si el entero es par o impar utilizando el operador %.*/
 		int a3= 13;
 		if (a3%2==0) {
 			System.out.println("El valor de a es una cifra par");
@@ -49,7 +49,7 @@ public class ejercicios344 {
 		else {
 			System.out.println("h");
 		}
-		/*Ejercicio pag 348: escribe un programa que dado tres numeros imprima por pantalla cual es el
+		/*Ejercicio pag 348: escribe un programa que dado tres números imprima por pantalla cuál es el
 		mayor.*/
 		int num1=2, num2=1, num3=3;
 		if (num1>num2 && num1>num3) {
