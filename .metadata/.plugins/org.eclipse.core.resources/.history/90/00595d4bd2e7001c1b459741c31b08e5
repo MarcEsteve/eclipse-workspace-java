@@ -1,6 +1,5 @@
 import java.util.*;
-
-public class scan {
+public class Main2 {
 
 	public static void main(String[] args) {
 		System.out.println("Introduce un número por pantalla: ");
@@ -36,6 +35,7 @@ public class scan {
 		}
 		
 		keyboard.close();
+
 	}
 
 }
