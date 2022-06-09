@@ -1,0 +1,14 @@
+
+public class sumaDecremental {
+
+	public static void main(String[] args) {
+		int num = 3;
+		for(int i=num; i>0; i--) {
+			int resultado = 0;
+			resultado+=i;
+			if (i==1) {
+				System.out.printf("El resultado de la suma decremental es: %d", resultado).println();
+			}
+		}
+	}
+}
