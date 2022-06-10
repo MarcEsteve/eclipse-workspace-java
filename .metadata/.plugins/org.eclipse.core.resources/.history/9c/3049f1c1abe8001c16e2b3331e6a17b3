@@ -1,0 +1,12 @@
+
+public class Estudiante {
+	//Atributos
+	int id;
+	int edat;
+	int telefono;
+	int numeroDeNotas;
+	int notaMedia;
+	//Métodos
+	void mostrarInfo();
+	void agragarNuevaNota();
+}
