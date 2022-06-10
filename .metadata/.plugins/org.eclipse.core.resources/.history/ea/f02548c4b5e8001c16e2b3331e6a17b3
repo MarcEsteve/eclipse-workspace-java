@@ -9,7 +9,5 @@ public class MainEstudiante {
 		//Mostrar la id del estudiante albert solo si es visible, es decir, "public"
 		//System.out.println(albert.id);
 		System.out.println(isaac.getId());
-		isaac.SetId(3);
-		System.out.println(isaac.getId());
 	}
 }

@@ -36,20 +36,14 @@ public class Estudiante {
 		this.sumaDeNotas=sumaDeNotas;
 		this.notaMedia=notaMedia;
 	}
-	//Atributos privados es lo normal
+	//Atributos
 	private int id;
 	private int edat;
 	private int telefono;
 	private int numeroDeNotas;
 	private int sumaDeNotas;
 	private double notaMedia;
-	//Métodos públicos
+	//Métodos
 	public void mostrarInfo() {};
 	public void agragarNuevaNota() {};
-	public int getId() {
-		return id;
-	};
-	public void SetId(int id) {
-		this.id = id;
-	};
 }

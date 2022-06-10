@@ -8,8 +8,5 @@ public class MainEstudiante {
 		Estudiante alison = new Estudiante(5 , 25 , 696999999, 8 , 8 , 8.0);
 		//Mostrar la id del estudiante albert solo si es visible, es decir, "public"
 		//System.out.println(albert.id);
-		System.out.println(isaac.getId());
-		isaac.SetId(3);
-		System.out.println(isaac.getId());
 	}
 }
