@@ -26,33 +26,25 @@ public class Main4 {
 				//Invocación del método que imprime "2--> Clientes"
 				Main4.mensajeClientes2();
 			} else if (numero == 3) {
-				//Invocación del método que imprime "3--> Transferencias"
+				//Invocación del método que imprime "2--> Clientes"
 				Main4.mensajeTransferencias3();
 			} else if (numero == 4) {
-				//Invocación del método que imprime "4--> Mensajes"
-				Main4.mensajeMensajes4();
+				System.out.println("4--> Mensajes");
 			} else if (numero == 5) {
-				//Invocación del método que imprime "5--> Prestamos"
-				Main4.mensajePrestamos5();
-			} else {
-				System.out.println("La opción no esta en el sistema");
+				System.out.println("5--> Prestamos");
 			}
 		}
 		System.out.println("6--> Salir");
 		keyboard.close();
 
 	}
-	private static void mensajePrestamos5() {
-		System.out.println("5--> Prestamos");
-	}
-	private static void mensajeMensajes4() {
-		System.out.println("4--> Mensajes");
-	}
 	private static void mensajeTransferencias3() {
 		System.out.println("3--> Transferencias");
+		
 	}
 	private static void mensajeClientes2() {
 		System.out.println("2--> Clientes");
+		
 	}
 	public static void mensajeGestores1() {
 		System.out.println("1--> Gestores");
