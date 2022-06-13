@@ -1,0 +1,20 @@
+
+public class MainCoche {
+
+	public static void main(String[] args) {
+		Coche audi = new Coche();
+		Coche honda = new Coche(3);
+		Coche opel = new Coche(105.0f,19.0f);
+		Coche mercedes = new Coche(50.f , 25.0f , 5, 8);
+		//invocación de los métodos estáticos
+		//Primer método le pasamos 350CV y nos convierte a 259.26Kw
+		float kw = Coche.convertirCvKw(350.0f);
+		//Primer método le pasamos 259.26Kw y nos convierte a 350CV
+		float cv = Coche.convertirKwCv(kw);
+		
+		//Mostrar el resultado de los dos cálculos de los métodos static
+		System.out.println(kw); //259.26Kw
+		System.out.println(cv); //350CV
+	}
+
+}

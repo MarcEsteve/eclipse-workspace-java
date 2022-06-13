@@ -85,7 +85,6 @@ public class Estudiante {
 	public void agregarNuevaNota() {
 		numeroDeNotas++;
 	}
-	//Ejercicio pág 380
 	public void agregarNuevaNota(int nota) {
 		agregarNuevaNota();
 		sumaDeNotas+=nota;

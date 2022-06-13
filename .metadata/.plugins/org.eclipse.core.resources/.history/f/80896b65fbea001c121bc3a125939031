@@ -83,23 +83,12 @@ public class Estudiante {
 		this.notaMedia = notaMedia;
 	};
 	public void agregarNuevaNota() {
-		numeroDeNotas++;
+		//Acciones
 	}
-	//Ejercicio pág 380
-	public void agregarNuevaNota(int nota) {
-		agregarNuevaNota();
-		sumaDeNotas+=nota;
-		notaMedia=sumaDeNotas/numeroDeNotas;
+	public void agregarNuevaNota(float nota) {
+		
 	}
-	public void agregarNuevaNota(int nota, boolean notaTrue) {
-		if (notaTrue) {
-			numeroDeNotas=0;
-			sumaDeNotas=0;
-			notaMedia=0;
-		} else {
-			agregarNuevaNota();
-			agregarNuevaNota(nota);
-		}
+	public void agregarNuevaNota(boolean true) {
 		
 	}
 }

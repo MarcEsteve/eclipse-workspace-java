@@ -1,0 +1,26 @@
+
+public class Coche {
+	
+	public Coche() {
+		this.velocidad = 5.0f;
+		this.caballos = 0.0f;
+		this.asientos = 4;
+		this.orientacionRuedas = 0;
+	}
+	public Coche(float velocidad, float caballos, int asientos, int orientacionRuedas) {
+		this.velocidad = velocidad;
+		this.caballos = caballos;
+		this.asientos = asientos;
+		this.orientacionRuedas = orientacionRuedas;
+	}
+	private float velocidad;
+	private float caballos;
+	private int asientos;
+	private int orientacionRuedas;
+	
+	public void parar() {}
+	public void acelerar() {}
+	public void desacelerar() {}
+	public void girarIzquierda() {}
+	public void girarDerecha() {}
+}

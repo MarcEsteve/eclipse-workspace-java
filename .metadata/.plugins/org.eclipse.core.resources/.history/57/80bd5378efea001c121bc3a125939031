@@ -1,0 +1,17 @@
+
+public class MainCoche {
+
+	public static void main(String[] args) {
+		Coche audi = new Coche();
+		Coche honda = new Coche(3);
+		Coche opel = new Coche(105.0f,19.0f);
+		Coche mercedes = new Coche(50.f , 25.0f , 5, 8);
+		//Mostrar la id del estudiante albert solo si es visible, es decir, "public"
+		//System.out.println(albert.id);
+		System.out.println(isaac.getId()); //Muestra valor actual = 1
+		isaac.setId(3);//Modificamos valor actual, asignando por argumento un 3
+		System.out.println(isaac.getId());//M
+
+	}
+
+}

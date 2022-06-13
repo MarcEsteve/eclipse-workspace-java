@@ -46,6 +46,16 @@ public class Estudiante {
 	//public static float crearEstudiante = Estudiante();
 	//Métodos públicos
 	public void mostrarInfo() {};
+	public void agregarNuevaNota() {};
+	public static void crearEstudiante(String... args) {
+		return Estudiante.id;
+		return Estudiante.edat;
+		return Estudiante.telefono;
+		return Estudiante.numeroDeNotas;
+		return Estudiante.sumaDeNotas;
+		return Estudiante.notaMedia;
+		
+	}
 	public int getId() {
 		return id;
 	};
@@ -82,24 +92,4 @@ public class Estudiante {
 	public void setNotaMedia(double notaMedia) {
 		this.notaMedia = notaMedia;
 	};
-	public void agregarNuevaNota() {
-		numeroDeNotas++;
-	}
-	//Ejercicio pág 380
-	public void agregarNuevaNota(int nota) {
-		agregarNuevaNota();
-		sumaDeNotas+=nota;
-		notaMedia=sumaDeNotas/numeroDeNotas;
-	}
-	public void agregarNuevaNota(int nota, boolean notaTrue) {
-		if (notaTrue) {
-			numeroDeNotas=0;
-			sumaDeNotas=0;
-			notaMedia=0;
-		} else {
-			agregarNuevaNota();
-			agregarNuevaNota(nota);
-		}
-		
-	}
 }

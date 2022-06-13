@@ -22,16 +22,5 @@ public class MainEstudiante {
 		alison.setId(2);//Modificamos valor actual, asignando por argumento
 		System.out.println(adrian.getId()); //Muestra valor actual
 		adrian.setId(18);//Modificamos valor actual, asignando por argumento
-		
-		//Ejercicio pag 379 por resolver
-		/*public static float crearEstudiante(String... args) {
-			return Estudiante.id=id;
-			return Estudiante.edat=edat;
-			return Estudiante.telefono=telefono;
-			return Estudiante.numeroDeNotas=numeroDeNotas;
-			return Estudiante.sumaDeNotas=sumaDeNotas;
-			return Estudiante.notaMedia=notaMedia;
-		}*/
-		
 	}
 }
