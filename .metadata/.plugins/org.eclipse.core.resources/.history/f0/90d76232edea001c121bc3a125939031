@@ -21,6 +21,6 @@ public class MainEstudiante {
 		System.out.println(alison.getId()); //Muestra valor actual
 		alison.setId(2);//Modificamos valor actual, asignando por argumento
 		System.out.println(adrian.getId()); //Muestra valor actual
-		adrian.setId(18);//Modificamos valor actual, asignando por argumento
+		isaac.setId(18);//Modificamos valor actual, asignando por argumento
 	}
 }

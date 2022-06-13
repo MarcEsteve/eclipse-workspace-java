@@ -16,11 +16,9 @@ public class MainEstudiante {
 		albert.setTelefono(654321789);//Modificamos valor actual
 		System.out.println(albert.getTelefono()); //Muestra valor 654321789
 		System.out.println(isaac.getTelefono()); //Muestra valor 699999999
-		System.out.println(laura.getId()); //Muestra valor actual
-		laura.setId(5);//Modificamos valor actual, asignando por argumento
-		System.out.println(alison.getId()); //Muestra valor actual
-		alison.setId(2);//Modificamos valor actual, asignando por argumento
-		System.out.println(adrian.getId()); //Muestra valor actual
-		adrian.setId(18);//Modificamos valor actual, asignando por argumento
+		System.out.println(laura.getId()); //Muestra valor actual = 1
+		laura.setId(3);//Modificamos valor actual, asignando por argumento un 3
+		System.out.println(alison.getId()); //Muestra valor actual = 1
+		alison.setId(3);//Modificamos valor actual, asignando por argumento un 3
 	}
 }

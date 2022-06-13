@@ -45,41 +45,11 @@ public class Estudiante {
 	private double notaMedia;
 	//Métodos públicos
 	public void mostrarInfo() {};
-	public void agregarNuevaNota() {};
+	public void agragarNuevaNota() {};
 	public int getId() {
 		return id;
 	};
-	public void setId(int id) {
+	public void SetId(int id) {
 		this.id = id;
-	};
-	public int getEdat() {
-		return edat;
-	};
-	public void setEdat(int edat) {
-		this.edat = edat;
-	};
-	public int getTelefono() {
-		return telefono;
-	};
-	public void setTelefono(int telefono) {
-		this.telefono = telefono;
-	};
-	public int getNumeroDeNotas() {
-		return numeroDeNotas;
-	};
-	public void setNumeroDeNotas(int numeroDeNotas) {
-		this.numeroDeNotas = numeroDeNotas;
-	};
-	public int getSumaDeNotas() {
-		return sumaDeNotas;
-	};
-	public void setSumaDeNotas(int sumaDeNotas) {
-		this.sumaDeNotas = sumaDeNotas;
-	};
-	public double getNotaMedia() {
-		return notaMedia;
-	};
-	public void setNotaMedia(double notaMedia) {
-		this.notaMedia = notaMedia;
 	};
 }
