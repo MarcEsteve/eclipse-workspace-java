@@ -43,10 +43,24 @@ public class Estudiante extends Persona {
 	private static int idEstudiante;
 	//public static float crearEstudiante = Estudiante();
 	//Métodos públicos
-	public void mostrarInfo() {
-		getNumeroDeNotas();
-		getSumaDeNotas();
-		getNotaMedia();
+	public void mostrarInfo() {};
+	public int getId() {
+		return id;
+	};
+	public void setId(int id) {
+		this.id = id;
+	};
+	public int getEdat() {
+		return edat;
+	};
+	public void setEdat(int edat) {
+		this.edat = edat;
+	};
+	public int getTelefono() {
+		return telefono;
+	};
+	public void setTelefono(int telefono) {
+		this.telefono = telefono;
 	};
 	public int getNumeroDeNotas() {
 		return numeroDeNotas;

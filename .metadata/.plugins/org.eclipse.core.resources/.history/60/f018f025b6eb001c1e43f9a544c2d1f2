@@ -1,0 +1,17 @@
+
+public class Profesor extends Persona {
+	//Atributos
+	private int numeroDeEdadesEstudiantes;
+	private int sumaDeEdadesEstudiantes;
+	private float estudiantesEdadMedia;
+	//Constructor
+	
+	//Métodos
+	public void agregarEdadEstudiante() {}
+	public void mostrarInfo() {
+		getNumeroDeEdadesEstudiantes();
+	}
+	public int getNumeroDeEdadesEstudiantes() {
+		return numeroDeEdadesEstudiantes;
+	};
+}
