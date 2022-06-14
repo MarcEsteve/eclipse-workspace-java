@@ -7,7 +7,7 @@ public class Estudiante extends Persona {
 		this.telefono=699999999;
 		this.numeroDeNotas=1;
 		this.sumaDeNotas=10;
-		this.notaMedia=5.0;
+		this.notaMedia=5;
 	}
 	//Constructor con un parámetro
 	public Estudiante(int id) {

@@ -14,6 +14,6 @@ public class Bicicleta extends Vehiculo {
 	}
 	@Override
 	protected void parar() {
-		 //Acciones sobreescritas del método de Vehiculo, la superclase
+		 
 	}
 }

@@ -21,10 +21,5 @@ public class Profesor extends Persona {
 	};
 	public float getEstudiantesEdadMedia() {
 		return estudiantesEdadMedia;
-	}
-	@Override
-	public void mostrarID() {
-		// TODO Auto-generated method stub
-		
 	};
 }

@@ -26,6 +26,6 @@ public class MainEstudiante {
 		//Ejercicio pag 379 por resolver
 		Estudiante.crearEstudiante();
 		
-		isaac.mostrarID();
+		
 	}
 }

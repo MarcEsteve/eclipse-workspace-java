@@ -11,6 +11,7 @@ public abstract class Persona {
 		this.telefono = 639639639;
 	}
 	//Métodos
+	public abstract void mostrarID();
 	public void mostrarInfo() {
 		getId();
 		getEdat();
@@ -34,6 +35,4 @@ public abstract class Persona {
 	public void setTelefono(int telefono) {
 		this.telefono = telefono;
 	};
-	//Método abstracto
-	public abstract void mostrarID();
 }

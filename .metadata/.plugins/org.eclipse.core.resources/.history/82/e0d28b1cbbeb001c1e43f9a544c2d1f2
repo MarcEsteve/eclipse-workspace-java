@@ -12,8 +12,4 @@ public class Bicicleta extends Vehiculo {
 		super(velocidad , asientos , orientacionRuedas);
 		this.cambios = 4;
 	}
-	@Override
-	protected void parar() {
-		 //Acciones sobreescritas del método de Vehiculo, la superclase
-	}
 }

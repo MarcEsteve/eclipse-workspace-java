@@ -1,5 +1,5 @@
 
-public abstract class Persona {
+public class Persona {
 	//Atributos
 	protected int id;
 	protected int edat;
@@ -34,6 +34,4 @@ public abstract class Persona {
 	public void setTelefono(int telefono) {
 		this.telefono = telefono;
 	};
-	//Método abstracto
-	public abstract void mostrarID();
 }
