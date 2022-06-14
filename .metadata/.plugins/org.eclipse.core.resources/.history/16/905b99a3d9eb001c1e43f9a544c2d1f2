@@ -1,0 +1,34 @@
+package com.app.f1;
+
+import com.clase.info.Estudiante;
+
+public class MainEstudiante {
+
+	public static void main(String[] args) {
+		Estudiante isaac = new Estudiante();
+		Estudiante albert = new Estudiante(3);
+		Estudiante laura = new Estudiante(5,19);
+		Estudiante alison = new Estudiante(5 , 25 , 696999999, 8 , 8 , 8.0);
+		Estudiante adrian = new Estudiante(18);
+		//Mostrar la id del estudiante albert solo si es visible, es decir, "public"
+		//System.out.println(albert.id);
+		System.out.println(isaac.getId()); //Muestra valor actual = 1
+		isaac.setId(3);//Modificamos valor actual, asignando por argumento un 3
+		System.out.println(isaac.getId());//Muestra valor actual = 3
+		System.out.println(albert.getTelefono()); //Muestra valor 699999996
+		albert.setTelefono(654321789);//Modificamos valor actual
+		System.out.println(albert.getTelefono()); //Muestra valor 654321789
+		System.out.println(isaac.getTelefono()); //Muestra valor 699999999
+		System.out.println(laura.getId()); //Muestra valor actual
+		laura.setId(5);//Modificamos valor actual, asignando por argumento
+		System.out.println(alison.getId()); //Muestra valor actual
+		alison.setId(2);//Modificamos valor actual, asignando por argumento
+		System.out.println(adrian.getId()); //Muestra valor actual
+		adrian.setId(18);//Modificamos valor actual, asignando por argumento
+		
+		//Ejercicio pag 379 por resolver
+		Estudiante.crearEstudiante();
+		
+		isaac.mostrarID();
+	}
+}

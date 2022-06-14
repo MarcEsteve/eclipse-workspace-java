@@ -1,0 +1,10 @@
+package com.app.f1;
+import com.vehiculo.info.Bicicleta;
+
+public class MainBicicleta {
+
+	public static void main(String[] args) {
+		Bicicleta bicicleta = new Bicicleta();
+	}
+
+}
