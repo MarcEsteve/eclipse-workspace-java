@@ -1,0 +1,14 @@
+//Especialización de la superclase Vehiculo, es decir, una clase hija
+public class Bicicleta extends Vehiculo {
+	//Atributos
+	private int cambios;
+	//Constructores
+	public Bicicleta() {
+		super(0.0f , 4 , 0);
+		this.cambios = 3;
+	}
+	public Bicicleta(float velocidad, int cambios , int asientos, int orientacionRuedas) {
+		super(velocidad , asientos , orientacionRuedas);
+		this.cambios = 4;
+	}
+}

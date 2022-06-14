@@ -1,0 +1,25 @@
+//La superclase de Coche, Avion y Bicicleta, clase madre
+public class Vehiculo {
+	//Atributos
+	protected float velocidad;
+	protected int asientos;
+	protected int orientacionRuedas;
+	//Constructores de la superclase
+	public Vehiculo() {
+		this.velocidad = 0.0f;
+		this.asientos = 4;
+		this.orientacionRuedas = 0;
+		System.out.println("Constructor de la clase madre" + this.velocidad);
+	}
+	public Vehiculo(float velocidad , int asientos , int orientacionRuedas) {
+		this.velocidad = velocidad;
+		this.asientos = asientos;
+		this.orientacionRuedas = orientacionRuedas;
+	}
+	//Métodos
+	public void parar() {}
+	public void acelerar() {}
+	public void desacelerar() {}
+	public void girarIzquierda() {}
+	public void girarDerecha() {}
+}

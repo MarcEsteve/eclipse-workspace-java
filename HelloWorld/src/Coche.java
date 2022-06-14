@@ -1,13 +1,17 @@
-
-public class Coche {
+//Especialización de la superclase Vehiculo, es decir, una clase hija
+public class Coche extends Vehiculo {
+	
+	private float caballos;
 	
 	public Coche() {
-		this.velocidad = 5.0f;
+		super(0.0f , 4 , 0);
 		this.caballos = 0.0f;
-		this.asientos = 4;
-		this.orientacionRuedas = 0;
 	}
-	public Coche(int asientos) {
+	public Coche(float velocidad, float caballos, int asientos, int orientacionRuedas) {
+		super(velocidad , asientos , orientacionRuedas);
+		this.caballos = caballos;
+	}
+	/*public Coche(int asientos) {
 		this.velocidad = 5.0f;
 		this.caballos = 0.0f;
 		this.asientos = asientos;
@@ -18,25 +22,9 @@ public class Coche {
 		this.caballos = caballos;
 		this.asientos = 5;
 		this.orientacionRuedas = 0;
-	}
-	public Coche(float velocidad, float caballos, int asientos, int orientacionRuedas) {
-		this.velocidad = velocidad;
-		this.caballos = caballos;
-		this.asientos = asientos;
-		this.orientacionRuedas = orientacionRuedas;
-	}
-	private float velocidad;
-	private float caballos;
-	private int asientos;
-	private int orientacionRuedas;
-	public static float factorConversionCvKw =2.3f;
+	}*/
 	
-	public void parar() {}
-	public void acelerar() {}
-	public void desacelerar() {}
-	public void girarIzquierda() {}
-	public void girarDerecha() {}
-
+	public static float factorConversionCvKw =2.3f;
 
 	//Método static que convierte los cv a kw
 	public static float convertirCvKw(float caballos) {

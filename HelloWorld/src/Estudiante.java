@@ -43,6 +43,7 @@ public class Estudiante {
 	private int numeroDeNotas;
 	private int sumaDeNotas;
 	private double notaMedia;
+	private static int idEstudiante;
 	//public static float crearEstudiante = Estudiante();
 	//Métodos públicos
 	public void mostrarInfo() {};
@@ -84,6 +85,15 @@ public class Estudiante {
 	};
 	public void agregarNuevaNota() {
 		numeroDeNotas++;
+	}
+	//Ejercicio 379 por resolver
+	public static float crearEstudiante(String... args) {
+		return idEstudiante;
+		/*return edat;
+		return telefono;
+		return numeroDeNotas;
+		return sumaDeNotas;
+		return notaMedia;*/
 	}
 	//Ejercicio pág 380
 	public void agregarNuevaNota(int nota) {

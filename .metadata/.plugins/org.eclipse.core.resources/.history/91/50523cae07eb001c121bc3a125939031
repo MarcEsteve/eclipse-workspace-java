@@ -1,0 +1,13 @@
+//La superclase de Coche, Avion y Bicicleta
+public class Vehiculo {
+	//Atributos
+	protected float velocidad;
+	protected int asientos;
+	protected int orientacionRuedas;
+	//Métodos
+	public void parar() {}
+	public void acelerar() {}
+	public void desacelerar() {}
+	public void girarIzquierda() {}
+	public void girarDerecha() {}
+}
