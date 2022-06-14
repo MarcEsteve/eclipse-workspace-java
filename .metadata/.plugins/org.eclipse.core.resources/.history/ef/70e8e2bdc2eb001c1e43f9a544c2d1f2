@@ -10,11 +10,6 @@ public abstract class Persona {
 		this.edat = 18;
 		this.telefono = 639639639;
 	}
-	public Persona(int id,int edat, int telefono) {
-		this.id = id;
-		this.edat = edat;
-		this.telefono = telefono;
-	}
 	//Métodos
 	public void mostrarInfo() {
 		getId();

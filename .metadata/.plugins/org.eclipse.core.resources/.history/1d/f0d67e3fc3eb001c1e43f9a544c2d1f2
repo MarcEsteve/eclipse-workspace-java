@@ -8,14 +8,13 @@ public class Profesor extends Persona {
 	public Profesor() {
 		super(13, 25, 699999999);
 		/*
-		 * Equivalente sin super():
 		this.id=1;
 		this.edat=18;
 		this.telefono=699999999;
 		*/
 		this.numeroDeEdadesEstudiantes=3;
 		this.sumaDeEdadesEstudiantes=10;
-		this.estudiantesEdadMedia=18.0f;
+		this.estudiantesEdadMedia=20.0f;
 	}
 
 	public Profesor(int id, int edat, int telefono) {
