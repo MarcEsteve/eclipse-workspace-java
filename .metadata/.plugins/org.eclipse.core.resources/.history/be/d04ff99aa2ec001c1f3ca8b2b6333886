@@ -68,7 +68,6 @@ public class Ejercicios413 {
 		int primerIndice = ejercicio5.indexOf('a');
 		System.out.println(primerIndice);
 		int segundoIndiceEj5 = ejercicio5.indexOf('a',primerIndice+1);
-		System.out.println(segundoIndiceEj5);
 		
 	}
 

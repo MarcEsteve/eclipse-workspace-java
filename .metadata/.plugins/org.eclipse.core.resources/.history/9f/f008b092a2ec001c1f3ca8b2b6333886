@@ -67,8 +67,6 @@ public class Ejercicios413 {
 		//Devolveria las posiciones 7 y 14
 		int primerIndice = ejercicio5.indexOf('a');
 		System.out.println(primerIndice);
-		int segundoIndiceEj5 = ejercicio5.indexOf('a',primerIndice+1);
-		System.out.println(segundoIndiceEj5);
 		
 	}
 

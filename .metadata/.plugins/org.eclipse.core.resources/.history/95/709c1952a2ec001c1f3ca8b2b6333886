@@ -63,12 +63,10 @@ public class Ejercicios413 {
 		//Ejercicio: escribe un programa que muestra por pantalla 
 		//el índice de la segunda y tercera	ocurrencia del 
 		//carácter 'a' en un String dado.
-		String ejercicio5 = "zzzabcdef abcdef abcdef dsajdsajk ";
+		String ejercicio5 = "zzz abcdef abcdef abcdef dsajdsajk ";
 		//Devolveria las posiciones 7 y 14
 		int primerIndice = ejercicio5.indexOf('a');
-		System.out.println(primerIndice);
-		int segundoIndiceEj5 = ejercicio5.indexOf('a',primerIndice+1);
-		System.out.println(segundoIndiceEj5);
+		System.out.printf(primerIndice);
 		
 	}
 
