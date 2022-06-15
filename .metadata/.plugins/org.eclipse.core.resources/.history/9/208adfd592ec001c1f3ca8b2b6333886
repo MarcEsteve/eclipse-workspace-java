@@ -1,0 +1,17 @@
+package com.app.strings;
+
+public class Strings {
+
+	public static void main(String[] args) {
+		String texto = "Esto es un texto";
+		System.out.println(texto.length());
+		String texto = "Esto es un texto";
+		// devuelve el primer carácter del String
+		System.out.println(texto.charAt(0));
+		// devuelve el tercer carácter del String
+		System.out.println(texto.charAt(2));
+		// devuelve el último carácter del String
+		System.out.println(texto.charAt(texto.length() - 1));
+	}
+
+}

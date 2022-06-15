@@ -1,0 +1,32 @@
+package com.app.strings;
+
+public class Ejercicios413 {
+
+	public static void main(String[] args) {
+		String a = "abc";
+		String b = "azz";
+		int ultimoValorA=a.length()-1;
+		int ultimoValorB=b.length()-1;
+		//Ejercicio: escribe un programa que dado 
+		//dos String compruebe si los dos primeros
+		//caracteres son iguales.
+		if (a.charAt(0)==b.charAt(0)) {
+			System.out.println("Son caracteres iniciales "
+							+ "iguales");
+		} else {
+			System.out.println("Son caracteres iniciales "
+							+ "diferentes");
+		}
+		//Ejercicio: escribe un programa que dado dos String
+		//compruebe si los dos primeros caracteres y 
+		//los dos últimos son iguales.
+		if (a.charAt(0)==b.charAt(0) && a.charAt(ultimoValorA)==b.charAt(ultimoValorB)) {
+			System.out.println("El primero y el último"
+							+ " caracter son iguales");
+		} else {
+			System.out.println("El primero y el último"
+					+ " caracter son diferentes");
+		}
+	}
+
+}

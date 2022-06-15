@@ -1,0 +1,52 @@
+package com.app.strings;
+
+public class Ejercicios413 {
+
+	public static void main(String[] args) {
+		String a = "abc";
+		String b = "azc";
+		String substringABC = "acc djskadjas acc jksdjabcd aac";
+		int ultimoValorA=a.length()-1;
+		int ultimoValorB=b.length()-1;
+		//Ejercicio: escribe un programa que dado 
+		//dos String compruebe si los dos primeros
+		//caracteres son iguales.
+		if (a.charAt(0)==b.charAt(0)) {
+			System.out.println("Son caracteres iniciales "
+							+ "iguales");
+		} else {
+			System.out.println("Son caracteres iniciales "
+							+ "diferentes");
+		}
+		//Ejercicio: escribe un programa que dado dos String
+		//compruebe si los dos primeros caracteres y 
+		//los dos últimos son iguales.
+		if (a.charAt(0)==b.charAt(0) && a.charAt(ultimoValorA)==b.charAt(ultimoValorB)) {
+			System.out.println("El primero y el último"
+							+ " caracter son iguales");
+		} else {
+			System.out.println("El primero y el último"
+					+ " caracter son diferentes");
+		}
+		//Ejercicio: escribe un programa que compruebe que el 
+		//substring "abc" se encuentra en un String dado, 
+		//pero no puede encontrarse ni al comienzo, ni al final.
+		if ((substringABC.indexOf("abc") != -1) 
+				&& (substringABC.indexOf("abc") !=0) 
+				&& (substringABC.lastIndexOf("abc") != substringABC.length()-3)) {
+			
+			System.out.println("El valor de texto abc esta dentro del texto");
+		} else {
+			System.out.println("No tenemos abc dentro o estan en los extremos");
+		}
+		//Ejercicio: escribe un programa que dado un String y un determinado índice, 
+		//compruebe	que el carácter anterior y el posterior son iguales o no.
+		String texto3= "Lorem ipsum dolor sit amet"
+		if () {	
+			System.out.println("El caracter");
+		} else {
+			System.out.println("No tenemos abc dentro o estan en los extremos");
+		}
+	}
+
+}

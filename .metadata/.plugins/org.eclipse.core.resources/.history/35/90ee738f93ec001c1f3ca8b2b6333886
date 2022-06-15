@@ -1,0 +1,18 @@
+package com.app.strings;
+
+public class Strings {
+
+	public static void main(String[] args) {
+		String texto = "Esto es un texto";
+		int longitudString=texto.length();
+		int ultimaPosicionString= longitud-1;
+		System.out.println(longitudString);
+		// devuelve el primer carácter del String
+		System.out.println(texto.charAt(0));
+		// devuelve el tercer carácter del String
+		System.out.println(texto.charAt(2));
+		// devuelve el último carácter del String
+		System.out.println(texto.charAt(ultimaPosicionString));
+	}
+
+}

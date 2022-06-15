@@ -1,0 +1,17 @@
+package com.app.strings;
+
+public class Ejercicios413 {
+
+	public static void main(String[] args) {
+		String a = "abc";
+		String b = "def";
+		if () {
+			System.out.println("Son caracteres iguales");
+		} else {
+			System.out.println("Son caracteres diferentes");
+		}
+		
+
+	}
+
+}
