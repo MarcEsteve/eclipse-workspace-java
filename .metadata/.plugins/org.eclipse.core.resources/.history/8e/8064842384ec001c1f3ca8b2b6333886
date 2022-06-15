@@ -1,9 +1,10 @@
+package com.app.strings;
 
-public class Main {
+public class Caracteres {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("¡Hola mundo!");
+
 	}
 
 }

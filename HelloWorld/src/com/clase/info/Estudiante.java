@@ -1,3 +1,10 @@
+/*
+ * Classname: Estudiante
+*
+ * Version info: 1.3
+ *
+ * Copyright notice: Licencia Libre Creative Commons
+ */
 package com.clase.info;
 
 public class Estudiante extends Persona {
@@ -29,7 +36,8 @@ public class Estudiante extends Persona {
 		this.notaMedia=7.5;
 	}
 	//Constructor con todos los parámetros
-	public Estudiante(int id,int edat,int telefono,int numeroDeNotas,int sumaDeNotas,double notaMedia) {
+	public Estudiante(int id,int edat,int telefono,int numeroDeNotas,
+					  int sumaDeNotas,double notaMedia) {
 		this.id=id;
 		this.edat=edat;
 		this.telefono=telefono;
@@ -94,10 +102,10 @@ public class Estudiante extends Persona {
 			agregarNuevaNota();
 			agregarNuevaNota(nota);
 		}
-		
 	}
 	@Override
 	public void mostrarID() {
-		System.out.println("La id del estudiante es: "+ this.id + " - Su nota media es: " + this.notaMedia ); 		
+		System.out.println("La id del estudiante es: "+ this.id + " "
+						   + "- Su nota media es: " + this.notaMedia ); 		
 	}
 }
