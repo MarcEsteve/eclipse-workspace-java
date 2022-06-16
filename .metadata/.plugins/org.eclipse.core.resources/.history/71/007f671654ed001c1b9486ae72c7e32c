@@ -115,7 +115,7 @@ public class Strings {
 		// Esto es un texto mayor
 		System.out.println(textoLargo);
 		//Inmutabilidad "String constant pool"
-		String s1 = "Welcome";
+		String s1 = "Welcomee";
 		// no se crea una nueva instancia, 
 		//sino que se aprovecha de la anterior
 		String s2 = "Welcome";
@@ -125,7 +125,6 @@ public class Strings {
 		else {
 			System.out.println("No son iguales");
 		}
-		
 	}
 
 }

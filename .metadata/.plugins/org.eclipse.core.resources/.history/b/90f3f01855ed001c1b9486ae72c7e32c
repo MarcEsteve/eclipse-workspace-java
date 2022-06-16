@@ -125,7 +125,6 @@ public class Strings {
 		else {
 			System.out.println("No son iguales");
 		}
-		
 	}
 
 }

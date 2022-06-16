@@ -116,16 +116,8 @@ public class Strings {
 		System.out.println(textoLargo);
 		//Inmutabilidad "String constant pool"
 		String s1 = "Welcome";
-		// no se crea una nueva instancia, 
-		//sino que se aprovecha de la anterior
+		// no se crea una nueva instancia, sino que se aprovecha de la anterior
 		String s2 = "Welcome";
-		if(s1==s2) {
-			System.out.println("Son iguales");
-		}
-		else {
-			System.out.println("No son iguales");
-		}
-		
 	}
 
 }

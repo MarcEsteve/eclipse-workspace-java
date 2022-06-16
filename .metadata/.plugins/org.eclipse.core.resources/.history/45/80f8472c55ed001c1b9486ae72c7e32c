@@ -125,7 +125,11 @@ public class Strings {
 		else {
 			System.out.println("No son iguales");
 		}
-		
+		//StringBuilder() y StringBuffer()
+		/*
+		Concatenación utilizando String
+		*/
+		long startTime = System.currentTimeMillis();
 	}
 
 }
