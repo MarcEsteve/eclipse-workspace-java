@@ -1,0 +1,13 @@
+package com.app.arrays;
+
+public class MainArrays {
+
+	public static void main(String[] args) {
+		System.out.printf("Número de parámetros: %d", 
+				args.length).println();
+		for(String arg : args) {
+			System.out.println(arg);
+		}
+	}
+
+}
