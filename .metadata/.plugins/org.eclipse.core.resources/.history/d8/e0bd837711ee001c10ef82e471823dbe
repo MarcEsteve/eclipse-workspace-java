@@ -1,0 +1,65 @@
+package com.app.strings;
+
+public class Ejercicios421 {
+
+	public static void main(String[] args) {
+		
+		//EJERCICIO 1
+		//Ejercicio: escribe un programa que concatene 
+		//dos StringBuilder, utilizando append y también 
+		//el operador concatenación.
+		StringBuilder strb1 = new StringBuilder("buenas");
+		StringBuilder strb2 = new StringBuilder("tardes");
+		//Ejercicio 1 A append()
+		//strb1.append(strb2);
+		//System.out.println(strb1);
+		//Ejercicio 1 B concatenación +
+		String strb3 = strb1.toString() 
+							+ strb2.toString();
+		System.out.println(strb3);
+		
+		//EJERCICIO 2
+		//Ejercicio: escribe un programa que elimine 
+		//el último carácter de un StringBuilder.
+		int ultimoIndice=strb1.length()-1;
+		strb1.deleteCharAt(ultimoIndice);
+		System.out.println(strb1);
+		//EJERCICIO 3
+		//Ejercicio: escribe un programa que inserte 
+		//el carácter 'b' cada tres posiciones en un
+		//StringBuilder.
+		StringBuilder strb4 = 
+					new StringBuilder("buenas tardes");
+		System.out.println(strb4);
+		for (int i=0;i<strb4.length()-1;i+=3) {
+			strb4.insert(i,"b");
+			System.out.println(strb4);
+		}
+		//System.out.println(strb4);
+		//EJERCICIO 4
+		//Ejercicio: escribe un programa que convierta 
+		//en mayúsculas la primera letra de cada palabra 
+		//de un StringBuilder.
+		StringBuilder strb5 = new StringBuilder("Ayer cayó un rayo");
+	    String conv=strb5.toString();
+	    int pos= 0;
+	    System.out.println(conv);
+	    for(int i=pos;i>conv.length()-1;i++) {
+	    	System.out.println(conv.charAt(0));
+	    	//System.out.println(conv.charAt(i));
+	    }
+
+	    /*while (pos<=conv.length()) {
+	        char caract=conv.charAt(pos);
+	        strb5.setCharAt(0, 'H');
+	            if (caract == ' ') {
+	                pos++;
+	                conv.toUpperCase();
+	            }else {
+	                pos++;
+	            }
+	    }*/
+		
+	}
+
+}
