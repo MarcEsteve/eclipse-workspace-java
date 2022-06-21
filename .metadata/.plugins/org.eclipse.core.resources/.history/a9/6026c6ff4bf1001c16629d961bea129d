@@ -1,0 +1,27 @@
+package com.banco;
+
+public class Gestor {
+	//Constructor por defecto
+	public Gestor() {
+		this.id=1;
+		this.id_gestor=1;
+		this.telefono=699999999;
+		this.numeroDeNotas=1;
+		this.sumaDeNotas=10;
+		this.notaMedia=5.0;
+	}
+	//Atributos
+	private int id;
+	private int id_gestor;
+	private String usuario;
+	private String password;
+	private String correo;
+	private double saldo;
+	//Métodos
+	public int getId() {
+		return id;
+	};
+	public void setId(int id) {
+		this.id = id;
+	};
+}
