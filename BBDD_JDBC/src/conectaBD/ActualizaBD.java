@@ -4,10 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class ModificaBD {
+public class ActualizaBD {
 
 	public static void main(String[] args) {
-		
 		try {
 			//1. Conexión con la base de datos
 			Connection conexion = DriverManager.getConnection(""
@@ -19,13 +18,15 @@ public class ModificaBD {
 			System.out.println("Creado Statement");
 			
 			//3. Generamos en un String la consulta SQL
-			String instruccionSQL= "INSERT INTO PRODUCTOS ("
-					+ "CÓDIGOARTÍCULO, NOMBREARTÍCULO, PRECIO)"
-					+ "VALUES ('AR77','PANTALÓN','25.35')";
+			String actualizarPrecio= "UPDATE productos SET PRECIO = "
+					+ "PRECIO*2 WHERE `CÓDIGOARTÍCULO`=\"AR77\";";
+			String actualizarSeccion= "UPDATE productos SET SECCIÓN = "
+					+ "\"CONFECCIÓN\" WHERE `CÓDIGOARTÍCULO`=\"AR77\";";
 			//4. Con el método executeUpdate("") introducimos 
 			//la instrucción SQL del String anterior
-			miStatement.executeUpdate(instruccionSQL);
-			System.out.println("Datos insertados correctamente");
+			miStatement.executeUpdate(actualizarPrecio);
+			miStatement.executeUpdate(actualizarSeccion);
+			System.out.println("Datos actualizados correctamente");
 			
 		}
 		catch (Exception e) {
