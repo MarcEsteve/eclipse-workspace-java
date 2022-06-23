@@ -1,4 +1,0 @@
-
-public interface personInterfaz {
-	public abstract void mostrarID();
-}
