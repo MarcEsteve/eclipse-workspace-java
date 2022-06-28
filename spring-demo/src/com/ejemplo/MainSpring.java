@@ -28,6 +28,12 @@ public class MainSpring {
 		System.out.println(entrenador3.getExperiencia());
 		System.out.println(entrenador3.getEntrenamiento());
 		
+		//Con el método setter y el properties en el XML
+		Entrenador entrenador4 = context.getBean(""
+				+ "mientrenadorjockey", Entrenador.class);
+		System.out.println(entrenador4.getExperiencia());
+		System.out.println(entrenador4.getEntrenamiento());
+		
 		/*
 		obtiene el bean, donde:
 		- el primer parámetro es el identificador del bean

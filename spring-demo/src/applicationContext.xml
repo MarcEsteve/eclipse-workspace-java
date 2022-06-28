@@ -34,4 +34,9 @@
 		constructor) -->
 		<constructor-arg ref="miExperienciaServicio"></constructor-arg>
 	</bean>
+	<bean id="mientrenadorjockey" class="com.ejemplo.EntrenadorJockey">
+		<!-- se establece qué bean se inyecta (miExperienciaServicio) 
+		y sobre qué método setter (setExperienciaServicio) -->
+		<property name="experienciaServicio" ref="miExperienciaServicio" />
+	</bean>
 </beans>
