@@ -1,10 +1,10 @@
 package com.ejemplo;
 
-public class EntrenadorTenis implements Entrenador {
+import org.springframework.stereotype.Component;
 
-	@Override
+@Component("mientrenadortenis")
+public class EntrenadorTenis implements Entrenador {
 	public String getEntrenamiento() {
 		return "Realizar 30 saques";
 	}
-
 }

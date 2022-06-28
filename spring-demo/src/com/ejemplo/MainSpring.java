@@ -15,12 +15,23 @@ public class MainSpring {
 		- el segundo parámetro es la interfaz que implementa el 
 		bean a recibir, realizando una especie casting
 		*/
-		Entrenador entrenador = context.getBean("mientrenador", 
+		/* Cuando tenemos el archivo XML
+		 * Entrenador entrenador = context.getBean("mientrenadorbasket", 
+		 
 												Entrenador.class);
 		System.out.println(entrenador.getEntrenamiento());
-		Entrenador entrenador2 = context.getBean("mientrenador2", 
+		Entrenador entrenador2 = context.getBean("mientrenadorfutbol", 
 				Entrenador.class);
 		System.out.println(entrenador2.getEntrenamiento());
+		*/
+		
+		//Creamos a través de ANOTACIONES
+		Entrenador entrenador = context.getBean("mientrenadorfutbol", Entrenador.class);
+		System.out.println(entrenador.getEntrenamiento());
+		Entrenador entrenador2 = context.getBean("mientrenadorbasket", Entrenador.class);
+		System.out.println(entrenador2.getEntrenamiento());
+		Entrenador entrenador3 = context.getBean("mientrenadortenis", Entrenador.class);
+		System.out.println(entrenador3.getEntrenamiento());
 		// cierra el contexto
 		context.close();
 		

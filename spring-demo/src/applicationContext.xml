@@ -8,9 +8,12 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- a partir de aquí se definen los beans -->
 	<!-- bean mientrenador asociado a la clase EntrenadorBaloncesto -->
-	<bean id="mientrenador" class="com.ejemplo.EntrenadorBaloncesto">
-	</bean>
+	<!--<bean id="mientrenadorbasket" class="com.ejemplo.EntrenadorBaloncesto">
+	</bean>-->
 	<!-- bean mientrenador asociado a la clase EntrenadorFutbol -->
-	<bean id="mientrenador2" class="com.ejemplo.EntrenadorFutbol">
-	</bean>
+	<!--<bean id="mientrenadorfutbol" class="com.ejemplo.EntrenadorFutbol">
+	</bean>-->
+	<!-- Spring escaneará recursivamente todas las clases del paquete 
+	y subpaquetes com.ejemplo -->
+	<context:component-scan base-package="com.ejemplo"/>
 </beans>
