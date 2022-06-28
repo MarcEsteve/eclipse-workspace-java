@@ -9,6 +9,12 @@ public class MainSpring {
 		// abre el contexto a partir del archivo de configuración
 		ClassPathXmlApplicationContext context =
 		new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		// obtener el bean mediante Inyección de dependencias
+		Entrenador entrenador = context.getBean("mientrenador", Entrenador.class);
+		System.out.println(entrenador.getExperiencia());
+		System.out.println(entrenador.getEntrenamiento());
+		
 		/*
 		obtiene el bean, donde:
 		- el primer parámetro es el identificador del bean
@@ -26,12 +32,12 @@ public class MainSpring {
 		*/
 		
 		//Creamos a través de ANOTACIONES
-		Entrenador entrenador = context.getBean("mientrenadorfutbol", Entrenador.class);
+		/*Entrenador entrenador = context.getBean("mientrenadorfutbol", Entrenador.class);
 		System.out.println(entrenador.getEntrenamiento());
 		Entrenador entrenador2 = context.getBean("mientrenadorbasket", Entrenador.class);
 		System.out.println(entrenador2.getEntrenamiento());
 		Entrenador entrenador3 = context.getBean("mientrenadortenis", Entrenador.class);
-		System.out.println(entrenador3.getEntrenamiento());
+		System.out.println(entrenador3.getEntrenamiento());*/
 		// cierra el contexto
 		context.close();
 		
