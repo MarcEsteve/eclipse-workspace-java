@@ -13,7 +13,8 @@ public class EntrenadorJockey implements Entrenador {
 		return experienciaServicio.getExperiencia();
 	}
 	// inyección del servicio en un método setter
-	public void setExperienciaServicio(ExperienciaServicio experienciaServicio) {
+	public void setExperienciaServicio(ExperienciaServicio 
+										experienciaServicio) {
 		System.out.println("Inyección en un método setter");
 		this.experienciaServicio = experienciaServicio;
 	}
