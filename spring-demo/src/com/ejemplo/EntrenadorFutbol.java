@@ -1,6 +1,6 @@
 package com.ejemplo;
 
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 
 //@Component("mientrenadorfutbol")
 public class EntrenadorFutbol implements Entrenador {

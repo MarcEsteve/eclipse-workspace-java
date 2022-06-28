@@ -11,9 +11,22 @@ public class MainSpring {
 		new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// obtener el bean mediante Inyección de dependencias
-		Entrenador entrenador = context.getBean("mientrenador", Entrenador.class);
+		Entrenador entrenador = context.getBean("mientrenadorfutbol", 
+												Entrenador.class);
 		System.out.println(entrenador.getExperiencia());
 		System.out.println(entrenador.getEntrenamiento());
+		
+		// obtener el bean mediante Inyección de dependencias
+		Entrenador entrenador2 = context.getBean("mientrenadorbasket", 
+												Entrenador.class);
+		System.out.println(entrenador2.getExperiencia());
+		System.out.println(entrenador2.getEntrenamiento());
+		
+		// obtener el bean mediante Inyección de dependencias
+		Entrenador entrenador3 = context.getBean("mientrenadortenis", 
+												Entrenador.class);
+		System.out.println(entrenador3.getExperiencia());
+		System.out.println(entrenador3.getEntrenamiento());
 		
 		/*
 		obtiene el bean, donde:

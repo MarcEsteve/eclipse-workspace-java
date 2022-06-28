@@ -19,7 +19,17 @@
 	<!-- servicio añadido -->
 	<bean id="miExperienciaServicio" class="com.ejemplo.PocaExperienciaServicio">
 	</bean>
-	<bean id="mientrenador" class="com.ejemplo.EntrenadorFutbol">
+	<bean id="mientrenadorfutbol" class="com.ejemplo.EntrenadorFutbol">
+		<!-- se establece qué bean se inyecta (miExperienciaServicio) y dónde (en el
+		constructor) -->
+		<constructor-arg ref="miExperienciaServicio"></constructor-arg>
+	</bean>
+	<bean id="mientrenadorbasket" class="com.ejemplo.EntrenadorBaloncesto">
+		<!-- se establece qué bean se inyecta (miExperienciaServicio) y dónde (en el
+		constructor) -->
+		<constructor-arg ref="miExperienciaServicio"></constructor-arg>
+	</bean>
+	<bean id="mientrenadortenis" class="com.ejemplo.EntrenadorTenis">
 		<!-- se establece qué bean se inyecta (miExperienciaServicio) y dónde (en el
 		constructor) -->
 		<constructor-arg ref="miExperienciaServicio"></constructor-arg>
