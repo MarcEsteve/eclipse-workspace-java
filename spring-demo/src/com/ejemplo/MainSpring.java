@@ -7,6 +7,7 @@ public class MainSpring {
 	public static void main(String[] args) {
 
 		// abre el contexto a partir del archivo de configuración
+		//Obtiene los BEANS del archivo XML
 		ClassPathXmlApplicationContext context =
 		new ClassPathXmlApplicationContext("applicationContext.xml");
 		
@@ -16,11 +17,18 @@ public class MainSpring {
 		System.out.println(entrenador.getExperiencia());
 		System.out.println(entrenador.getEntrenamiento());
 		
+		//Inyección de VALORES LITERALES
+		System.out.println(entrenador.getEmail());
+		System.out.println(entrenador.getEquipo());
+		
 		// obtener el bean mediante Inyección de dependencias
 		Entrenador entrenador2 = context.getBean("mientrenadorbasket", 
 												Entrenador.class);
 		System.out.println(entrenador2.getExperiencia());
 		System.out.println(entrenador2.getEntrenamiento());
+		//Valores en properties
+		System.out.println(entrenador2.getEmail());
+		System.out.println(entrenador2.getEquipo());
 		
 		// obtener el bean mediante Inyección de dependencias
 		Entrenador entrenador3 = context.getBean("mientrenadortenis", 
@@ -33,6 +41,8 @@ public class MainSpring {
 				+ "mientrenadorjockey", Entrenador.class);
 		System.out.println(entrenador4.getExperiencia());
 		System.out.println(entrenador4.getEntrenamiento());
+		
+		
 		
 		/*
 		obtiene el bean, donde:

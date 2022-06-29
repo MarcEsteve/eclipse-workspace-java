@@ -6,6 +6,7 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:property-placeholder location="classpath:datos.properties"/>
 	<!-- a partir de aquí se definen los beans -->
 	<!-- bean mientrenador asociado a la clase EntrenadorBaloncesto -->
 	<!--<bean id="mientrenadorbasket" class="com.ejemplo.EntrenadorBaloncesto">
@@ -23,11 +24,17 @@
 		<!-- se establece qué bean se inyecta (miExperienciaServicio) y dónde (en el
 		constructor) -->
 		<constructor-arg ref="miExperienciaServicio"></constructor-arg>
+		<property name="email" value="correodeprueba@mail.com"></property>
+		<property name="equipo" value="Mean Machine"></property>
 	</bean>
 	<bean id="mientrenadorbasket" class="com.ejemplo.EntrenadorBaloncesto">
 		<!-- se establece qué bean se inyecta (miExperienciaServicio) y dónde (en el
 		constructor) -->
 		<constructor-arg ref="miExperienciaServicio"></constructor-arg>
+		<!-- asigna el valor de la clave email del archivo properties -->
+		<property name="email" value="${email}" />
+		<!-- asigna el valor de la clave equipo del archivo properties -->
+		<property name="equipo" value="${equipo}" />
 	</bean>
 	<bean id="mientrenadortenis" class="com.ejemplo.EntrenadorTenis">
 		<!-- se establece qué bean se inyecta (miExperienciaServicio) y dónde (en el
