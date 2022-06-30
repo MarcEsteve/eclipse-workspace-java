@@ -1,5 +1,6 @@
 package com.ejemplo;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainSpring {
@@ -11,9 +12,16 @@ public class MainSpring {
 		ClassPathXmlApplicationContext context =
 		new ClassPathXmlApplicationContext("applicationContext.xml");
 		
+		// abre el contexto a partir del archivo de configuración
+		//Obtiene los BEANS de las anotaciones
+		AnnotationConfigApplicationContext contextconfig = new
+				AnnotationConfigApplicationContext(Configuracion.class);
+		
 		// obtener el bean mediante Inyección de dependencias
 		Entrenador entrenador = context.getBean("mientrenadorfutbol", 
 												Entrenador.class);
+		Entrenador entrenador1 = context.getBean("mientrenadorfutbol", 
+				Entrenador.class);
 		System.out.println(entrenador.getExperiencia());
 		System.out.println(entrenador.getEntrenamiento());
 		
@@ -31,7 +39,7 @@ public class MainSpring {
 		System.out.println(entrenador2.getEquipo());
 		
 		// obtener el bean mediante Inyección de dependencias
-		Entrenador entrenador3 = context.getBean("mientrenadortenis", 
+		Entrenador entrenador3 = contextconfig.getBean("mientrenadortenis", 
 												Entrenador.class);
 		System.out.println(entrenador3.getExperiencia());
 		System.out.println(entrenador3.getEntrenamiento());
@@ -41,7 +49,22 @@ public class MainSpring {
 				+ "mientrenadorjockey", Entrenador.class);
 		System.out.println(entrenador4.getExperiencia());
 		System.out.println(entrenador4.getEntrenamiento());
+		//Vamos a revisar el ámbito Scope de los beans
 		
+		Entrenador entrenador5 = contextconfig.getBean(""
+				+ "entrenadorBaloncesto", Entrenador.class);
+		System.out.println(entrenador5.getExperiencia());
+
+		System.out.println(entrenador5.getEntrenamiento());
+		System.out.println(entrenador5.getEmail());
+		System.out.println(entrenador5.getEquipo());
+		
+		System.out.println(entrenador);
+		System.out.println(entrenador1);
+		System.out.println(entrenador2);
+		System.out.println(entrenador3);
+		System.out.println(entrenador4);
+		System.out.println(entrenador5);
 		
 		
 		/*
@@ -69,6 +92,7 @@ public class MainSpring {
 		System.out.println(entrenador3.getEntrenamiento());*/
 		// cierra el contexto
 		context.close();
+		contextconfig.close();
 		
 		/*Entrenador entrenadorFutbol = new EntrenadorFutbol();
 		Entrenador entrenadorBaloncesto= new EntrenadorBaloncesto();

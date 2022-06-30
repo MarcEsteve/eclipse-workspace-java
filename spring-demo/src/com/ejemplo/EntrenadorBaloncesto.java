@@ -1,22 +1,30 @@
 package com.ejemplo;
 
-//import org.springframework.stereotype.Component;
+import org.springframework.stereotype.*;
 
-//@Component("mientrenadorbasket")
+
+//@Component("entrenadorBaloncesto")
 public class EntrenadorBaloncesto implements Entrenador {
 	
-	protected String email;
-	protected String equipo;
+	private String email;
+	private String equipo;
 	
 	private ExperienciaServicio experienciaServicio;
 	// constructor con el servicio inyectado
 	public EntrenadorBaloncesto(ExperienciaServicio experienciaServicio) {
-		System.out.println("Inyección en el constructor");
+		System.out.println("Inyección en el constructor Beans");
 		this.experienciaServicio = experienciaServicio;
+	}
+	
+	//El constructor espera recibir los valores de email y equipo 
+	//cargados desde el archivo properties
+	public EntrenadorBaloncesto(String email, String equipo) {
+		this.email = email;
+		this.equipo = equipo;
 	}
 	@Override
 	public String getEntrenamiento() {
-		return "Realizar 30 tiros a canasta";
+		return "Realizar 30 tiros a canasta del bean";
 	}
 	
 	@Override
@@ -43,6 +51,18 @@ public class EntrenadorBaloncesto implements Entrenador {
 		System.out.println("Inyección de un valor literal en un método setter: " 
 				+ equipo);
 		this.equipo=equipo;
+		
+	}
+	@PostConstruct
+	public void init() {
+		
+		System.out.println("Inicialización baloncesto");
+		
+	}
+	@PreDestroy
+	public void destroy() {
+
+		System.out.println("Destrucción baloncesto");
 		
 	}
 

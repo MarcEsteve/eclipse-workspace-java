@@ -10,4 +10,7 @@ public interface Entrenador {
 	public void setEmail(String email);
 	public String getEquipo();
 	public void setEquipo(String equipo);
+	
+	public void init();
+	public void destroy();
 }

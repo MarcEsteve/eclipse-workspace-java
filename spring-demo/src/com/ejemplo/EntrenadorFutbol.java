@@ -1,5 +1,7 @@
 package com.ejemplo;
 
+import org.springframework.beans.factory.annotation.Value;
+
 //import org.springframework.stereotype.Component;
 
 //@Component("mientrenadorfutbol")
@@ -40,6 +42,18 @@ public class EntrenadorFutbol implements Entrenador {
 	public void setEquipo(String equipo) {
 		System.out.println("Inyección de un valor literal en un método setter: " + equipo);
 		this.equipo=equipo;
+		
+	}
+	@Override
+	public void init() {
+		
+		System.out.println("Inicialización");
+		
+	}
+	@Override
+	public void destroy() {
+		
+		System.out.println("Finalización");
 		
 	}
 }
