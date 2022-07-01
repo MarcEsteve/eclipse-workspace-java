@@ -53,7 +53,7 @@ public class MainSpring {
 		
 		Entrenador entrenador5 = contextconfig.getBean(""
 				+ "entrenadorBaloncesto", Entrenador.class);
-		System.out.println(entrenador5.getExperiencia());
+		//System.out.println(entrenador5.getExperiencia());
 
 		System.out.println(entrenador5.getEntrenamiento());
 		System.out.println(entrenador5.getEmail());

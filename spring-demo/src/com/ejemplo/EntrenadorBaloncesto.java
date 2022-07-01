@@ -1,15 +1,17 @@
 package com.ejemplo;
 
-import org.springframework.stereotype.*;
+import org.springframework.beans.factory.annotation.Value;
 
 
 //@Component("entrenadorBaloncesto")
 public class EntrenadorBaloncesto implements Entrenador {
+		
+	//Contructor por defecto
+	public EntrenadorBaloncesto() {
+		System.out.println("Contructor por defecto");
+	}
 	
-	private String email;
-	private String equipo;
 	
-	private ExperienciaServicio experienciaServicio;
 	// constructor con el servicio inyectado
 	public EntrenadorBaloncesto(ExperienciaServicio experienciaServicio) {
 		System.out.println("Inyección en el constructor Beans");
@@ -65,5 +67,12 @@ public class EntrenadorBaloncesto implements Entrenador {
 		System.out.println("Destrucción baloncesto");
 		
 	}
-
+	
+	private ExperienciaServicio experienciaServicio;
+	
+	@Value("${email}")
+	private String email;
+	
+	@Value("${equipo}")
+	private String equipo;
 }
