@@ -4,15 +4,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Titulo de la pagina</title>
+<title>Spring MVC</title>
 </head>
 <body>
 
 <h1>
-
-Primer ejemplo de MVC con Spring5
-
+Página principal del proyecto Spring MVC
 </h1>
+<a href="/Spring_MVC_Ejemplo/mostrarFormulario">Mostrar Formulario</a>
 
 </body>
 </html>
