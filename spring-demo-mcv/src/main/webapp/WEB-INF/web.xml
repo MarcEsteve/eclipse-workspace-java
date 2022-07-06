@@ -8,7 +8,10 @@
 
 	<absolute-ordering />
 
-	
+	<error-page>
+	<!-- los errores se redirigirán a esta URL -->
+		<location>/errors</location>
+	</error-page>
 
 	<!-- Configuracion del dispatcher servlet -->
 	<servlet>
