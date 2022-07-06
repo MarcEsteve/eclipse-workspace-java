@@ -9,9 +9,10 @@
 	<body>
 		<!-- el formulario enviará los datos a la url /procesarFormulario a través del método
 		GET de HTTP -->
-		<form action="formulario" method="POST">
+		<form action="procesarFormulario" method="POST">
 			<!-- caja de texto donde se escribirá el nombre -->
 			<input type="text" name="nombre" placeholder="Escribe tu nombre" />
+			<input type="email" name="correo" placeholder="Escribe tu correo" />
 			<!-- botón para enviar la información -->
 			<input type="submit" />
 		</form>

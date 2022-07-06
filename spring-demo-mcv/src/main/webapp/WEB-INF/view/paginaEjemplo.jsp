@@ -14,7 +14,7 @@
 <body>
 		
 <h1>Pagina principal del proyecto de MVC con Spring</h1>
-<a href="http://localhost:8080/spring-demo-mcv/mostrarFormulario">formulario</a>
+<a href="mostrarFormulario">formulario</a>
 <img src="${pageContext.request.contextPath}/resources/img/mar.jpg" />
 <p style="color:#ff11c7;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 

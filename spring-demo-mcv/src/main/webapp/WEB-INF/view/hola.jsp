@@ -10,7 +10,7 @@
 <!-- nombre es el valor del atributo name para el campo de texto del formulario
 anterior -->
 <p style="color:#ff0000;">(WEB -HOLA.JSP)Hola ${mensaje}, bienvenido a tu primer formulario</p>
-
+<p style="color:#ff0000;">(WEB -HOLA.JSP)Tu correo es: ${param.correo}</p>
 <a href="http://localhost:8080/spring-demo-mcv/">Pagina Principal</a>
 </body>
 </html>
