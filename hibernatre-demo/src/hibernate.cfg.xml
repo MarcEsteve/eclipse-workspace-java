@@ -1,0 +1,46 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- parámetros de conexión -->
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate-demo?
+		useSSL=false&amp;serverTimezone=UTC</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password"></property>
+		<!-- número de conexiones máxima que puede establecer Hibernate al 
+		mismo tiempo con la base de datos -->
+		<property name="connection.pool_size">10</property>
+		<!--
+		Aunque SQL es un estándar, existen diferencias entre sistemas de bases 
+		de datos (dialectos). Pueden revisar los diferentes dialectos de 
+		hibernate en:
+		https://docs.jboss.org/hibernate/orm/5.4/javadocs/org/hibernate/dialect/packagesummary.
+		html
+		-->
+		<!-- dialecto SQL utilizado por Hibernate (MySQL8Dialect recomendable para últimas
+		versiones de MySQL y MariaDB)-->
+		<!-- también puede utilizarse el dialecto MySQL5InnoDBDialect -->
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect </property>
+		
+		<!--muestra todas las sentencias SQL por consola -->
+		<property name="show_sql">true</property>
+		
+		<!--
+		El contexto será el hilo donde se abra la sesión (de esta forma se recuperará
+		la misma sesión si se trata de abrir de nuevo la sesión desde el mismo hilo)
+		-->
+		<property name="current_session_context_class">thread</property>
+		
+		<!--
+		* update: actualiza el esquema de tablas (su uso no es recomendado)
+		* create: crea el esquema de tablas, destruyendo los datos previos
+		* create-drop: elimina el esquema cuando el SessionFactory es cerrado
+		* none: no realiza ninguna acción
+		-->
+		<property name="hbm2ddl.auto">update</property>
+		
+	</session-factory>
+</hibernate-configuration>
