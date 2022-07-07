@@ -110,8 +110,8 @@ public class Controlador {
 			System.out.println(clave + ": " + valor);
 		});
 		// pero se devuelve el código de estado NOT_FOUND (404)
-		//throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+		throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 		//System.out.println("El valor de la cabecera accept-language es " + acceptLanguage);
-		return "formulario-hola";
+		//return "formulario-hola";
 	}
 }
