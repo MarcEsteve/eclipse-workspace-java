@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+id="WebApp_ID" version="3.1">
+<!-- identificador interno de toda la aplicación web -->
+<display-name>tienda</display-name>
+<!-- especifica qué fragmentos web JAR (dentro del archivo WEB-INF/webfragment.
+xml)
+deben escanearse en busca de fragmentos y anotaciones. Un elemento <absoluteordering
+/> vacío configura que ninguno sea escaneado -->
+<absolute-ordering></absolute-ordering>
+<!-- configuración del DispatcherServlet (Front Controller) -->
+<!-- pueden declararse varios servlet -->
+<servlet>
+<!-- nombre del servlet (puede ser cualquier nombre) -->
+<servlet-name>dispatcher</servlet-name>
+<!-- ubicación del DispatcherServlet en las librerías de Spring -->
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<!-- parámetros de configuración del DispatcherServlet -->
+<init-param>
+<!-- indica que la configuración del contexto se encuentra en el archivo
+/WEB-INF/spring-mvc-demo-servlet.xml -->
+<param-name>contextConfigLocation</param-name>
+<param-value>/WEB-INF/spring-mvc-servlet.xml</param-value>
+</init-param>
+<!-- load-on-startup >= 0 indica que el servlet se carga cuando se inicia
+el servidor (el tratamiento de la primera petición será más rápido) -->
+<!-- load-on-startup < 0 indice que el servlet se cargará cuando se recibe
+la primera petición (el tratamiento de la primera petición será más lento) -->
+<!-- cuando existen más servlets, el orden de arrancado dependerá del valor
+de load-on-startup. Primero el que tenga asignado el valor 0, después el
+1 y así sucesivamente -->
+<load-on-startup>1</load-on-startup>
+</servlet>
+<!-- mapeo de rutas -->
+<servlet-mapping>
+<!-- todas las rutas (/) son redireccionadas al servlet de nombre dispatcher -->
+<servlet-name>dispatcher</servlet-name>
+<url-pattern>/</url-pattern>
+</servlet-mapping>
+</web-app>
